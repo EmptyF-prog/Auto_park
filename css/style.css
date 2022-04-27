@@ -1254,7 +1254,7 @@ BLOG PAGE
   padding-left: 20px;
 }
 
-.category ul li {
+.widget_categories ul li {
   margin-bottom: 10px;
   text-transform: capitalize;
   position: relative;
@@ -1263,7 +1263,7 @@ BLOG PAGE
   padding-bottom: 10px;
 }
 
-.category ul li:before {
+.widget_categories ul li:before {
   position: absolute;
   content: "\f105";
   left: 0px;

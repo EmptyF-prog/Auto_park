@@ -162,7 +162,7 @@ function my_navigation_template( $template, $class ){
 	';
 }
 
-// Вывод пагинации на сайте
+// Вывод пагинации на сайте 
 the_posts_pagination( array(
 	'end_size' => 2,
 ) );
