@@ -2,7 +2,7 @@
 // Функция для работы с визуалом сайта
 if (! function_exists('auto_park_setup'))  {
 	function auto_park_setup() {
-		// Добовляем пользовательское лого
+		// Возможность добавления логотипа
 		add_theme_support('custom-logo', [
 			'height'      => 50,
 			'width'       => 130,
