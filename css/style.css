@@ -1273,16 +1273,16 @@ BLOG PAGE
   font-weight: 900;
 }
 
-.tag a {
+.widget_tag_cloud a {
   text-transform: capitalize;
   padding: 5px 8px;
   border: 1px solid #eee;
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 14px !important;
   display: inline-block;
 }
 
-.search i {
+.widget_search i {
   position: absolute;
   right: 0px;
   top: 0px;
