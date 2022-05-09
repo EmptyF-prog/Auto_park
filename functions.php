@@ -71,7 +71,8 @@ function auto_park_menus() {
 	// Собираем несколько областей меню
 	$locations = array(
 		'header'  => __( 'Header_menu', 'auto_park' ),
-		'footer' => __( 'Footer_menu', 'auto_park' ),
+		'footer_left' => __( 'Footer Left menu', 'auto_park' ),
+		'footer_right' => __( 'Footer Right menu', 'auto_park' ),
 		
 	);
 	//Регистрируем области меню, которые лежат в переменной $locations
@@ -179,6 +180,24 @@ register_sidebar( array(
 	'before_title'  => '<h5 class="widget-title mb-3">',
 	'after_title'   => '</h5>'    
     ) );
+	register_sidebar( array( 
+
+	'name'          => esc_html( 'Сайдбар подвала', 'auto_park' ),
+	'id'            => "sidebar-footer-text",
+	'before_widget' => '<div class="footer-widget footer-link %2$s">',
+	'after_widget'  => '</div>',
+	'before_title'  => '<h4>',
+	'after_title'   => '</h4>'    
+	) );
+	register_sidebar( array( 
+
+	'name'          => esc_html( 'Контакты подвала', 'auto_park' ),
+	'id'            => "sidebar-footer-contacts",
+	'before_widget' => '<div class="footer-widget footer-text %2$s">',
+	'after_widget'  => '</div>',
+	'before_title'  => '<h4>',
+	'after_title'   => '</h4>'    
+	) );
 }
 
 
