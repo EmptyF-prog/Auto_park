@@ -7,7 +7,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 m-auto text-center col-sm-12 col-md-12">
             <div class="banner-content content-padding">
-              <h1 class="text-white">Наши услуги</h1>
+              <h1 class="text-white"><?php the_title();?></h1>
               <p>Мы оказываем весь спект диджитал услуг</p>
             </div>
           </div>
@@ -16,42 +16,8 @@
     </div>
     <!--MAIN HEADER AREA END -->
 
+    <?php the_content( );?>
 
-        <!--  SERVICE BLOCK2 START  -->
-        <section id="service-2" class="section-padding">
-          <div class="container">
-            <div class="row justify-content-center">
-              <div class="col-lg-4 col-md-6">
-                <div class="service-box-2">
-                  <span>01</span>
-                  <h4>Лучшие <br />аудит и аналитика</h4>
-                  <p>
-                    Мы изучаем крупные бренды и мелкие стартапы, чтобы суметь выстроить наиболее подходящую стратегию.
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="service-box-2">
-                  <span>02</span>
-                  <h4>Глубокое <br />понимание SEO</h4>
-                  <p>
-                    Мы знаем алгоритмы поисковых сайтов. Понимаем, какие действия ведут к лучшим результатам на рынке.
-                  </p>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-6">
-                <div class="service-box-2">
-                  <span>03</span>
-                  <h4>Современная <br />работа с ядром</h4>
-                  <p>
-                    Мы собираем ядро сайта из ключевых слов, собирая данные со всех сайтов по вашей тематике. 
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <!--  SERVICE BLOCK2 END  -->
 
         <!--  SERVICE AREA START  -->
         <section class="section pt-0">

@@ -7,8 +7,26 @@
         <div class="row justify-content-center">
             <div class="col-lg-8 m-auto text-center col-sm-12 col-md-12">
                 <div class="banner-content content-padding">
-                    <h1 class="text-white">Последние новости предприятия</h1>
-                    <p>Статьи,новости,полезная информация</p>
+               
+                    <h1 class="text-white"> <?php 
+                if (is_category(  )){
+                    echo __('<small>Рубрика </small> <br>') . get_queried_object() -> name;
+                }   
+
+                if (is_tag(  )){
+                    echo __('<small>Записи c меткой: </small> <br>') . get_queried_object() -> name;
+                } 
+
+                if (is_author(  )){
+                    echo __('<small>Записи автора </small> <br>') . get_the_author_meta('display_name');
+                } 
+
+                if (is_date(  )){
+                    echo __('<small>Архив по дате </small> <br>') . get_the_date();
+                } 
+                ?>
+                </h1>   
+ 
                 </div>
             </div>
         </div>
