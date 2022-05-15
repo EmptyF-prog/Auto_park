@@ -700,4 +700,37 @@ function my_custom_init(){
 		'menu_position'      => 5,
 		'supports'           => array('title','editor','author','thumbnail','excerpt','comments')
 	) );
+
+
+	register_post_type('price', array(
+		'labels'             => array(
+			'name'               => 'Цены', // Основное название типа записи
+			'singular_name'      => 'Цена', // отдельное название записи типа service
+			'add_new'            => 'Добавить новую',
+			'add_new_item'       => 'Добавить новую Цену',
+			'edit_item'          => 'Редактировать Цену',
+			'new_item'           => 'Новая Цена',
+			'view_item'          => 'Посмотреть Цену',
+			'search_items'       => 'Найти Цену',
+			'not_found'          => 'Цен не найдено',
+			'not_found_in_trash' => 'В корзине Цен не найдено',
+			'parent_item_colon'  => '',
+			'menu_name'          => 'Цена'
+
+		  ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => true,
+		'capability_type'    => 'post',
+		'menu_icon'			 => 'dashicons-money-alt',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => 5,
+		'supports'           => array('title','editor','author','thumbnail','excerpt','comments', 'custom-fields')
+	) );
 }
+
+

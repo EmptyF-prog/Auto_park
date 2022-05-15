@@ -7,7 +7,7 @@
         <div class="row justify-content-center">
           <div class="col-lg-8 m-auto text-center col-sm-12 col-md-12">
             <div class="banner-content content-padding">
-              <h1 class="text-white">Цены на услуги для Физ.лиц</h1>
+              <h1 class="text-white">Цены на услуги аренды для Физ.лиц</h1>
               <p>Подберите подходящий тариф</p>
             </div>
           </div>
@@ -27,77 +27,44 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4 col-sm-6">
-            <div class="pricing-block">
-              <div class="price-header">
-                <i class="icofont-diamond"></i>
+        <?php		
+            global $post;
 
-                <h4 class="price">15 000<small>₽</small></h4>
-                <h5>ежемесячно</h5>
-              </div>
-              <div class="line"></div>
-              <ul>
-                <li>5 веб-сайтов</li>
-                <li>Дизайн презентаций</li>
-                <li>Видео-визитка</li>
-                <li>Общий менеджер</li>
-                <li>Упаковка маркетинг-кит</li>
-                <li>Домен для сайта на год</li>
-                <li>Поддержка в расширенное время</li>
-                <li>Ежемесячный отчет</li>
-              </ul>
+            $query = new WP_Query( [
+              'posts_per_page' => 6,
+              'post_type'        => 'price',
+              'order'          => 'ASC'
+            ] );
 
-              <a href="#" class="btn btn-hero btn-circled">выбрать тариф</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="pricing-block">
-              <div class="price-header">
-                <i class="icofont-rocket-alt-1"></i>
+            if ( $query->have_posts() ) {
+              while ( $query->have_posts() ) {
+                $query->the_post();
+                ?>
+                    <div class="col-lg-4 col-sm-6">
 
-                <h4 class="price">25 000<small>₽</small></h4>
-                <h5>ежемесячно</h5>
-              </div>
-              <div class="line"></div>
-              <ul>
-                <li>10 веб-сайтов</li>
-                <li>Дизайн презентаций</li>
-                <li>Видео-визитка</li>
-                <li>Отдельный менеджер</li>
-                <li>Упаковка маркетинг-кит</li>
-                <li>Домен для сайта на год</li>
-                <li>Поддержка в любое время</li>
-                <li>Ежемесячный отчет</li>
-              </ul>
+                    <div class="pricing-block">
+                    <div class="price-header">
+                    <i class="icofont-<?php echo get_post_meta( $post -> ID, 'price-icon', true )?>"></i>
 
-              <a href="#" class="btn btn-hero btn-circled">выбрать тариф</a>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <div class="pricing-block">
-              <div class="price-header">
-                <i class="icofont-light-bulb"></i>
+                    <h4 class="price"><?php the_title();?><small>BYN</small></h4>
+                    <h5><?php the_excerpt();?></h5>
+                    </div>
+                    <div class="line"></div>
+                    <?php the_content();?>
 
-                <h4 class="price">55 000<small>₽</small></h4>
-                <h5>ежемесячно</h5>
-              </div>
-              <div class="line"></div>
-              <ul>
-                <li>1 веб-сайт</li>
-                <li>Дизайн презентаций</li>
-                <li>Видео-визитка</li>
-                <li>Общий менеджер</li>
-                <li>Упаковка маркетинг-кит</li>
-                <li>Домен для сайта на год</li>
-                <li>Поддержка в рабочее время</li>
-                <li>Ежемесячный отчет</li>
-              </ul>
+                    <a href="#" class="btn btn-hero btn-circled">выбрать тариф</a>
+                    </div>
+                    </div>
+                <?php 
+              }
+            } else {
+              // Постов не найдено
+            }
 
-              <a href="#" class="btn btn-hero btn-circled">выбрать тариф</a>
-            </div>
-          </div>
-        </div>
-      </div>
+            wp_reset_postdata(); // Сбрасываем $post
+        ?>
+      
+
     </section>
     <!-- PRICE AREA END  -->
     <!--  TESTIMONIAL AREA START  -->
@@ -204,27 +171,7 @@
       </div>
     </section>
     <!--  TESTIMONIAL AREA END  -->
-    <!--  PARTNER START  -->
-    <section class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 col-sm-6 col-md-3 text-center">
-            <img src="images/clients/client01.png" alt="partner" class="img-fluid" />
-          </div>
-          <div class="col-lg-3 col-sm-6 col-md-3 text-center">
-            <img src="images/clients/client06.png" alt="partner" class="img-fluid" />
-          </div>
-          <div class="col-lg-3 col-sm-6 col-md-3 text-center">
-            <img src="images/clients/client04.png" alt="partner" class="img-fluid" />
-          </div>
-          <div class="col-lg-3 col-sm-6 col-md-3 text-center">
-            <img src="images/clients/client05.png" alt="partner" class="img-fluid" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--  PARTNER END  -->
-
+   
 
 
 <?php get_footer(); ?>
