@@ -8,7 +8,7 @@
           <div class="col-lg-8 m-auto text-center col-sm-12 col-md-12">
             <div class="banner-content content-padding">
               <h1 class="text-white"><?php the_title();?></h1>
-              <p>Мы оказываем весь спект диджитал услуг</p>
+              <p>Мы оказываем весь спектр услуг которые может предоставить наша организация</p>
             </div>
           </div>
         </div>
@@ -25,11 +25,7 @@
             <div class="row justify-content-center">
               <div class="col-lg-8 col-sm-12 m-auto">
                 <div class="heading text-white text-center">
-                  <h4 class="section-title text-white">Диджитал полного цикла</h4>
-              <p>
-                Это означает, что мы сможем выполнить любую цифровую задачу: <br />
-                видео, маркетинг, реклама, разработка или дизайн.
-              </p>
+              
                 </div>
               </div>
             </div>
@@ -80,5 +76,4 @@
     <!--  SERVICE AREA END  -->
 
   
-
 <?php get_footer(); ?>

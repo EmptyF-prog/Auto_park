@@ -16,7 +16,6 @@
     <!--MAIN HEADER AREA END -->
 
     <?php the_content( );?>
+  
 
-     
-     
 <?php get_footer(); ?>
