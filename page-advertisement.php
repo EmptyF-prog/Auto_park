@@ -1,91 +1,203 @@
 <?php get_header(); ?>
 
-
-  <!--MAIN BANNER AREA START -->
-  <div class="page-banner-area page-contact" id="page-banner">
+    <!--MAIN BANNER AREA START -->
+    <div class="page-banner-area page-service" id="page-banner">
       <div class="overlay dark-overlay"></div>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 m-auto text-center col-sm-12 col-md-12">
             <div class="banner-content content-padding">
-              <h1 class="text-white">Давайте обсудим работу над&nbsp;вашим проектом</h1>
-              <p>Напишите нам и вам ответит проектный менеджер</p>
+              <h1 class="text-white"><?php the_title();?></h1>
+              <p>Мы оказываем весь спект диджитал услуг</p>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!--MAIN HEADER AREA END -->
-    <!--  Contact START  -->
+
+    <?php the_content( );?>
+
+
+        <!--  SERVICE AREA START  -->
+        <section class="section pt-0">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-5 col-sm-12 col-md-6 mb-4">
+                <img src="images/bg/2-min.jpg" alt="feature bg" class="img-fluid" />
+              </div>
+
+              <div class="col-lg-7 pl-4">
+                <div class="mb-5">
+                  <h3 class="mb-4">Мы создаем эффективный <br />дизайн сайтов</h3>
+                  <p>
+                    Все наши проекты создаются креативными веб-дизайнерами, соблюдая все современнные тенденции в этой сфере. Лучшие специалисты будут создавать продукт для вас. 
+                  </p>
+                </div>
+
+                <ul class="about-list">
+                  <li>
+                    <h5 class="mb-2"><i class="icofont icofont-check-circled"></i>Адаптивные сайты</h5>
+                    <p>Сайты хорошо смотрятся на смартфонах.</p>
+                  </li>
+
+                  <li>
+                    <h5 class="mb-2"><i class="icofont icofont-check-circled"> </i> Фреймворки</h5>
+                    <p>В работе используются React, Bootstrap и др.</p>
+                  </li>
+
+                  <li>
+                    <h5 class="mb-2"><i class="icofont icofont-check-circled"> </i>Кроссбраузерно</h5>
+                    <p>Смотреться сайт будет одинаково хорошо во всех браузерах.</p>
+                  </li>
+                  <li>
+                    <h5 class="mb-2"><i class="icofont icofont-check-circled"> </i>Retina Friendly</h5>
+                    <p>Сайт создаются так, чтобы вся графика выглядела красиво на устройствах с Retina дисплеями.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--  SERVICE AREA END  -->
+        <!--  SERVICE PARTNER START  -->
+        <section id="service-head" class="service-style-two">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-8 col-sm-12 m-auto">
+                <div class="heading text-white text-center">
+                  <h4 class="section-title text-white">Диджитал полного цикла</h4>
+              <p>
+                Это означает, что мы сможем выполнить любую цифровую задачу: <br />
+                видео, маркетинг, реклама, разработка или дизайн.
+              </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--  SERVICE PARTNER END  -->
+        <!--  SERVICE AREA START  -->
+    <section id="service">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 col-md-6">
+            <div class="service-box">
+              <div class="service-img-icon">
+                <img src="images/icon/007-digital-marketing-3.png" alt="service-icon" class="img-fluid" />
+              </div>
+              <div class="service-inner">
+                <h4>Видео маркетинг</h4>
+                <p>
+                  Охватите огромное количество пользователей и получите рекламу вашего продукта и услуги с помощью
+                  <span>видео маркетинга</span>.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-md-6">
+            <div class="service-box">
+              <div class="service-img-icon">
+                <img src="images/icon/008-digital-marketing-2.png" alt="service-icon" class="img-fluid" />
+              </div>
+              <div class="service-inner">
+                <h4>Email маркетинг</h4>
+                <p>
+                  Маркетинг по электронной почте-это отличное решение для охвата широкого круга клиентов, с нетерпением
+                  ожидающих получения услуги.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-md-6">
+            <div class="service-box">
+              <div class="service-img-icon">
+                <img src="images/icon/003-task.png" alt="service-icon" class="img-fluid" />
+              </div>
+              <div class="service-inner">
+                <h4>SEO оптимизация</h4>
+                <p>
+                  мы предоставляем широкий спектр услуг seo, чтобы выдвинуть ваш сайт в топ по запросам, чтобы охватить
+                  ваших целевых клиентов.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 col-md-6">
+            <div class="service-box">
+              <div class="service-img-icon">
+                <img src="images/icon/010-digital-marketing.png" alt="service-icon" class="img-fluid" />
+              </div>
+              <div class="service-inner">
+                <h4>Собственный сайт</h4>
+                <p>
+                  Мы предоставляем индивидуальный веб-сайт для любого веб-сервиса небольшой и крупной компании в большом
+                  компактном пакете.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-md-6">
+            <div class="service-box">
+              <div class="service-img-icon">
+                <img src="images/icon/006-analytics.png" alt="service-icon" class="img-fluid" />
+              </div>
+              <div class="service-inner">
+                <h4>Контент маркетинг</h4>
+                <p>
+                  Создайте информационный сайт, чтобы заработать на нем, а мы вам в этом поможем: с помощью дизайна,
+                  разработки или SEO.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 col-md-6">
+            <div class="service-box">
+              <div class="service-img-icon">
+                <img src="images/icon/004-hiring.png" alt="service-icon" class="img-fluid" />
+              </div>
+              <div class="service-inner">
+                <h4>Ссылочная масса</h4>
+                <p>
+                  Чтобы ваш сайт вызывал больше доверия, мы обеспечим высокую цитируемость. На ваш сайт будут ссылаться
+                  авторитетные сайты.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  SERVICE AREA END  -->
+
+        <!--  PARTNER START  -->
     <section class="section-padding">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-sm-12 col-md-12">
+          <div class="col-lg-8 text-center text-lg-left">
             <div class="mb-5">
-              <h2 class="mb-2">Напишите нам</h2>
-              <p>
-                Обычно, мы видим заявку сразу, а перезваниваем или пишем в ответ в течение часа. Иногда ответ может
-                занять до одного дня.
-              </p>
+              <h3 class="mb-2">Эти компании доверяют нам</h3>
+              <p>Компании, с которыми мы работаем давно</p>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-7 col-sm-12">
-            <form class="contact__form" method="post" action="mail.php">
-              <!-- form message -->
-              <div class="row">
-                <div class="col-12">
-                  <div class="alert alert-success contact__msg" style="display: none" role="alert">
-                    Ваше сообщение отправлено.
-                  </div>
-                </div>
-              </div>
-              <!-- end message -->
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input name="name" type="text" class="form-control" placeholder="Имя" required />
-                </div>
-                <div class="col-md-6 form-group">
-                  <input name="email" type="email" class="form-control" placeholder="Email" required />
-                </div>
-                <div class="col-md-12 form-group">
-                  <input name="phone" type="text" class="form-control" placeholder="Телефон" required />
-                </div>
-                <div class="col-12 form-group">
-                  <textarea name="message" class="form-control" rows="6" placeholder="Сообщение" required></textarea>
-                </div>
-                <div class="col-12 mt-4">
-                  <input name="submit" type="submit" class="btn btn-hero btn-circled" value="Отправить" />
-                </div>
-              </div>
-            </form>
+          <div class="col-lg-3 col-sm-6 col-md-3 text-center">
+            <img src="images/clients/client01.png" alt="partner" class="img-fluid" />
           </div>
-
-          <div class="col-lg-5 pl-4 mt-4 mt-lg-0">
-            <h4>Адрес офиса</h4>
-            <p class="mb-3">г. Москва, ул. 40 лет СССР, строение 3, офис 37</p>
-            <h4>Телефон</h4>
-            <p class="mb-3">+7 345 64 79 20</p>
-            <h4>E-Mail</h4>
-            <p class="mb-3">support@email.com</p>
+          <div class="col-lg-3 col-sm-6 col-md-3 text-center">
+            <img src="images/clients/client06.png" alt="partner" class="img-fluid" />
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-3 text-center">
+            <img src="images/clients/client04.png" alt="partner" class="img-fluid" />
+          </div>
+          <div class="col-lg-3 col-sm-6 col-md-3 text-center">
+            <img src="images/clients/client05.png" alt="partner" class="img-fluid" />
           </div>
         </div>
       </div>
     </section>
-    <!--  CONTACT END  -->
-
-    <!--  Google Map START  -->
-    <section id="map" class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 col-sm-6 col-md-3"></div>
-        </div>
-      </div>
-    </section>
-    <!--  Google Map END  -->
-
-
-
+    <!--  PARTNER END  -->
 
 <?php get_footer(); ?>

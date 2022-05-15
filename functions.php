@@ -666,3 +666,38 @@ class Bootstrap_Walker_Comment extends Walker {
 		<?php
 	}
 }
+
+//Регистрация тип записи услуги 
+
+add_action('init', 'my_custom_init');
+function my_custom_init(){
+	register_post_type('service', array(
+		'labels'             => array(
+			'name'               => 'Услуги', // Основное название типа записи
+			'singular_name'      => 'Услуга', // отдельное название записи типа service
+			'add_new'            => 'Добавить новую',
+			'add_new_item'       => 'Добавить новую услугу',
+			'edit_item'          => 'Редактировать услугу',
+			'new_item'           => 'Новая услуга',
+			'view_item'          => 'Посмотреть услугу',
+			'search_items'       => 'Найти услугу',
+			'not_found'          => 'услуг не найдено',
+			'not_found_in_trash' => 'В корзине услуг не найдено',
+			'parent_item_colon'  => '',
+			'menu_name'          => 'услуги'
+
+		  ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => true,
+		'capability_type'    => 'post',
+		'menu_icon'			 => 'dashicons-format-aside',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => 5,
+		'supports'           => array('title','editor','author','thumbnail','excerpt','comments')
+	) );
+}
