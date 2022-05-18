@@ -701,7 +701,7 @@ function my_custom_init(){
 		'supports'           => array('title','editor','author','thumbnail','excerpt','comments')
 	) );
 
-
+//Регистрация тип записи цены 
 	register_post_type('price', array(
 		'labels'             => array(
 			'name'               => 'Цены', // Основное название типа записи
@@ -730,6 +730,38 @@ function my_custom_init(){
 		'hierarchical'       => false,
 		'menu_position'      => 5,
 		'supports'           => array('title','editor','author','thumbnail','excerpt','comments', 'custom-fields')
+	) );
+
+
+//Регистрация тип записи клиенты
+	register_post_type('testimonial', array(
+		'labels'             => array(
+			'name'               => 'Отзыв', // Основное название типа записи
+			'singular_name'      => 'Отзывы', // отдельное название записи типа service
+			'add_new'            => 'Добавить Отзыв',
+			'add_new_item'       => 'Добавить новый Отзыв',
+			'edit_item'          => 'Редактировать Отзыв',
+			'new_item'           => 'Новая Отзыв',
+			'view_item'          => 'Посмотреть Отзыв',
+			'search_items'       => 'Найти Отзыв',
+			'not_found'          => 'Отзыв не найдено',
+			'not_found_in_trash' => 'В корзине Отзыв не найдено',
+			'parent_item_colon'  => '',
+			'menu_name'          => 'Отзыв'
+
+		  ),
+		'public'             => true,
+		'publicly_queryable' => true,
+		'show_ui'            => true,
+		'show_in_menu'       => true,
+		'query_var'          => true,
+		'rewrite'            => true,
+		'capability_type'    => 'post',
+		'menu_icon'			 => 'dashicons-format-status',
+		'has_archive'        => true,
+		'hierarchical'       => false,
+		'menu_position'      => 5,
+		'supports'           => array('title','thumbnail','excerpt','custom-fields')
 	) );
 }
 
