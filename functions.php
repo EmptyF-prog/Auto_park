@@ -71,7 +71,7 @@ function Auto_park_scripts() {
     //Подключение карты googlemap
 	wp_enqueue_script( 'googlemap', get_template_directory_uri() . '/plugins/google-map/gmap3.min.js', array('jquery'), '1.0.0', true );
     //Подключение contacs-js
-	wp_enqueue_script( 'contact-js', get_template_directory_uri() . '/plugins/jquery/contact.js', array('jquery'), '1.0.0', true );
+	wp_enqueue_script( 'contact-js', get_template_directory_uri() . '/plugins/form/contact.js', array('jquery'), '1.0.0', true );
     //Подключение custom-js
 	wp_enqueue_script( 'custom-js', get_template_directory_uri() . '/js/custom.js', array('jquery'), '1.0.0', true );
 }
@@ -763,6 +763,16 @@ function my_custom_init(){
 		'menu_position'      => 5,
 		'supports'           => array('title','thumbnail','excerpt','custom-fields')
 	) );
+}
+
+add_action('wp_ajax_my_action', 'my_action_callback');
+add_action('wp_ajax_nopriv_my_action', 'my_action_callback');
+
+
+function my_action_callback() {
+	echo 'Обработка формы';
+	// выход нужен для того, чтобы в ответе не было ничего лишнего, только то что возвращает функция
+	wp_die();
 }
 
 

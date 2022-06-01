@@ -272,44 +272,41 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-sm-6 col-md-4">
+        <?php		
+        global $post;
+
+        $query = new WP_Query( [
+          'posts_per_page' => 5,
+          'post_type' => 'post'
+        ] );
+
+        if ( $query->have_posts() ) {
+          while ( $query->have_posts() ) {
+            $query->the_post();
+            ?>
+            <div class="col-lg-4 col-sm-6 col-md-4">
             <div class="blog-block">
-              <img src="images/blog/blog-1.jpg" alt="" class="img-fluid" />
+              <?php the_post_thumbnail( 'post-thumnbnail', ['class' => 'img-fluid'] )?>
               <div class="blog-text">
-                <h6 class="author-name"><span>Лайфхаки</span>Иван Лазарев</h6>
-                <a href="blog-single.html" class="h5 my-2 d-inline-block"> Лучшие способы вовлечь людей в статью </a>
-                <p>Вы заметили, что статьи на вашем сайте даже не читают? Это можно легко исправить, вам поможет...</p>
+                <h6 class="author-name"><span>
+                 <?php
+                 $category = get_the_category();
+                 echo $category[0] -> name;
+                 ?> 
+                </span><?php the_author()?></h6>
+                <a href="<?php echo get_the_permalink();?>" class="h5 my-2 d-inline-block"> <?php the_title()?> </a>
+                <?php the_excerpt()?>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 col-md-4">
-            <div class="blog-block">
-              <img src="images/blog/blog-2.jpg" alt="" class="img-fluid" />
-              <div class="blog-text">
-                <h6 class="author-name"><span>Брендинг</span>Света Ключева</h6>
-                <a href="blog-single.html" class="h5 my-2 d-inline-block">
-                  Как подняться в топ, даже если вы стартовали недавно</a
-                >
-                <p>
-                  Позиционирование. Вот, что нужно для быстрого поднятия сайта в топ, ну и поведенческие факторы,
-                  конечно, куда без них...
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-sm-6 col-md-4">
-            <div class="blog-block">
-              <img src="images/blog/blog-3.jpg" alt="" class="img-fluid" />
-              <div class="blog-text">
-                <h6 class="author-name"><span>Маркетинг</span>Люда Милова</h6>
-                <a href="blog-single.html" class="h5 my-2 d-inline-block"> Как запустить сайт уже завтра? </a>
-                <p>
-                  Даже если ваш сайт еще только в вашей голове или на бумаге, его можно запустить всего за сутки.
-                  Покажу, как это можно сделать.
-                </p>
-              </div>
-            </div>
-          </div>
+            <?php 
+          }
+        } else {
+          // Постов не найдено
+        }
+
+        wp_reset_postdata(); // Сбрасываем $post
+        ?>
         </div>
       </div>
     </section>
@@ -322,29 +319,29 @@
           <div class="col-lg-3 col-sm-6 col-md-6">
             <div class="counter-stat">
               <i class="icofont icofont-heart"></i>
-              <span class="counter">460</span>
-              <h5>счастливых клиентов</h5>
+              <span class="counter"><?php  echo get_post_meta($post -> ID,'clients',true);?></span>
+              <h5>Количество клиентов</h5>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6 col-md-6">
             <div class="counter-stat">
               <i class="icofont icofont-rocket"></i>
-              <span class="counter">60</span>
-              <h5>выполненных проектов</h5>
+              <span class="counter"><?php  echo get_post_meta($post -> ID,'done-partners',true);?></span>
+              <h5>Количество пратнеров</h5>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6 col-md-6">
             <div class="counter-stat">
               <i class="icofont icofont-hand-power"></i>
-              <span class="counter">30</span>
-              <h5>людей в команде</h5>
+              <span class="counter"><?php  echo get_post_meta($post -> ID,'team',true);?></span>
+              <h5>Людей в команде</h5>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6 col-md-6">
             <div class="counter-stat">
               <i class="icofont icofont-shield-alt"></i>
-              <span class="counter">25</span>
-              <h5>Проектов в работе</h5>
+              <span class="counter"><?php  echo get_post_meta($post -> ID,'current-project',true);?></span>
+              <h5>Заключенных договоров</h5>
             </div>
           </div>
         </div>
