@@ -65,11 +65,11 @@
 
           <div class="col-lg-5 pl-4 mt-4 mt-lg-0">
             <h4>Адрес офиса</h4>
-            <p class="mb-3">г. Москва, ул. 40 лет СССР, строение 3, офис 37</p>
+            <p class="mb-3">г. Речица, ул.Трифонова 70</p>
             <h4>Телефон</h4>
-            <p class="mb-3">+7 345 64 79 20</p>
+            <p class="mb-3">8 (02340) 9 95 18</p>
             <h4>E-Mail</h4>
-            <p class="mb-3">support@email.com</p>
+            <p class="mb-3">avtopark3@gomelavto.by</p>
           </div>
         </div>
       </div>
