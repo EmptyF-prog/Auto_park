@@ -27,32 +27,30 @@
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6 col-sm-12 col-md-8 mb-4">
-            <h3 class="mb-3">Мы инновационное <br />SEO и маркетинговое агентство</h3>
+            <h3 class="mb-3">Современный автопарк <br />залог комофорта пассажиров</h3>
             <p class="mb-4">
-              Мы предоставляем диджитал услуги для маленьких стартап-команд <br />
-              и для крупного федерального бизнеса
+              Мы предоставляем диджитал услуги для физических лиц, юридический лиц,<br />
+              и для крупного или мелкого бизнеса
             </p>
 
             <span class="h5 mb-4">К нам обращаются, когда нужно:</span>
             <ul class="about-list2 my-4">
-              <li class="mb-2"><i class="icofont icofont-check-circled"></i> Провести аудит сайтов и приложений</li>
+              <li class="mb-2"><i class="icofont icofont-check-circled"></i> Сделать качественную и продуктивную рекламу</li>
 
               <li class="mb-2">
-                <i class="icofont icofont-check-circled"> </i> Составить СЕО компанию для разных поисковых систем
+                <i class="icofont icofont-check-circled"> </i> Заказать транспорт на праздник
               </li>
 
               <li class="mb-2">
-                <i class="icofont icofont-check-circled"> </i> Написать, снять, смонтировать контент для сайта
+                <i class="icofont icofont-check-circled"> </i> Перевезти тяжелый груз
               </li>
 
               <li class="mb-2">
-                <i class="icofont icofont-check-circled"> </i> Настроить рекламу в социальных сетях или сделать контент
+                <i class="icofont icofont-check-circled"> </i> Посетить новые места
               </li>
             </ul>
 
-            <a href="service.html" class="mt-3 d-inline-block"
-              >Подробнее об услугах <i class="fa fa-angle-right"></i
-            ></a>
+         
           </div>
 
           <div class="col-lg-6 col-md-4">
@@ -71,8 +69,8 @@
               <img src="images/about/h-1.jpg" alt="" class="img-fluid rounded mr-3" />
 
               <div class="media-body">
-                <h4 class="mb-3">Оказываем услуги больше 10 лет подряд!</h4>
-                <p>К нам обращались тогда, когда соцсети были не так популярны и продвигали только сайты.</p>
+                <h4 class="mb-3">Мы работаем с 1956 года!</h4>
+                <p>Мы один из самых инновационных автопарков страны</p>
               </div>
             </div>
           </div>
@@ -81,8 +79,8 @@
               <img src="images/about/h-2.jpg" alt="" class="img-fluid rounded mr-3" />
 
               <div class="media-body">
-                <h4 class="mb-3">Наша задача — достигать целей наших клиентов!</h4>
-                <p>Когда соцсети стали популярны, мы стали оказывать услуги для своих клиентов в соцсетях</p>
+                <h4 class="mb-3">Наша задача — сделать ваше передвижение максимально комофртным</h4>
+                <p>Мы справимся с любой поставленной задачей!</p>
               </div>
             </div>
           </div>
@@ -97,24 +95,24 @@
           <div class="col-lg-3 col-md-6">
             <div class="text-center border p-4 rounded mb-4">
               <span class="counter text-dark font-weight-normal">460</span>
-              <h5 class="text-uppercase mt-2">Счастливых клиентов</h5>
+              <h5 class="text-uppercase mt-2">Счастливых пассажиров</h5>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="text-center border p-4 rounded mb-4">
-              <span class="counter text-dark font-weight-normal">60</span>
-              <h5 class="text-uppercase mt-2">Завершенных проектов</h5>
+              <span class="counter text-dark font-weight-normal">120</span>
+              <h5 class="text-uppercase mt-2">Заключенных договоров</h5>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="text-center border p-4 rounded mb-4">
-              <span class="counter text-dark font-weight-normal">30</span>
+              <span class="counter text-dark font-weight-normal">500</span>
               <h5 class="text-uppercase mt-2">Людей в нашей команде</h5>
             </div>
           </div>
           <div class="col-lg-3 col-md-6">
             <div class="text-center border p-4 rounded">
-              <span class="counter text-dark font-weight-normal">25</span>
+              <span class="counter text-dark font-weight-normal">70</span>
               <h5 class="text-uppercase mt-2">Текущих проектов в работе</h5>
             </div>
           </div>
@@ -131,31 +129,30 @@
               <div class="col-lg-6">
                 <div class="mb-5">
                   <span class="icon-3x text-default"><i class="icofont-layers"></i></span>
-                  <h4 class="my-3">Выведем вас в топ Google</h4>
-                  <p>Протестируем спрос, соберем аналитику и настроим сайт для выхода на первую страницу.</p>
+                  <h4 class="my-3">Отвезем в любую точку страны!</h4>
+                  <p>Любые населенный пункты, города, и места достопримечательности</p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div class="mb-5">
                   <span class="icon-3x text-default"><i class="icofont-ui-timer"></i></span>
-                  <h4 class="my-3">Сохраните свое время</h4>
-                  <p>Мы возьмем на себя все хлопоты по поддержке и продвижению сайта в поисковиках</p>
+                  <h4 class="my-3">Сохраните ваше время</h4>
+                  <p>Все максимально быстро, комфортно а главное качественно</p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div>
                   <span class="icon-3x text-default"><i class="icofont-ui-browser"></i></span>
-                  <h4 class="my-3">Кроссплатформенный сайт</h4>
-                  <p>Те продукты, которые мы запускаем, работают на разных браузерах и системах одинаково.</p>
+                  <h4 class="my-3">У нас вы можете сразу узнать всю информацию</h4>
+                  <p>На нашем сайте только самая достовернная информация</p>
                 </div>
               </div>
               <div class="col-lg-6">
                 <div>
                   <span class="icon-3x text-default"><i class="icofont icofont-shield"></i></span>
-                  <h4 class="my-3">Данные под защитой</h4>
+                  <h4 class="my-3">Наш транспорт является самым безопасным!</h4>
                   <p>
-                    Все ваши данные надежно защищены и шифруются при передаче. Все условия конфиденциальности прописаны
-                    в договоре
+                    Весь наш транспорт оснащен по максимуму, и вы можете не беспокоиться во время дальних поездок
                   </p>
                 </div>
               </div>
@@ -165,142 +162,7 @@
       </div>
     </section>
     <!--  SECTION Service-2 END  -->
-    <!--  SECTION TEAM  -->
-    <section class="section-padding bg-gray">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8">
-            <div class="mb-5">
-              <h3 class="mb-2">Наши эксперты</h3>
-              <p>Команда квалифицированных профессионалов</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-md-6">
-            <img src="images/team/team-1.jpg" alt="" class="img-fluid rounded w-100" />
-
-            <ul class="list-unstyled list-inline team-social mt-4">
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-pinterest"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-              </li>
-            </ul>
-            <h4 class="mt-3">Марина Клирова</h4>
-            <p>Старший менеджер</p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <img src="images/team/team-2.jpg" alt="" class="img-fluid rounded w-100" />
-
-            <ul class="list-unstyled list-inline team-social mt-4">
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-pinterest"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-              </li>
-            </ul>
-            <h4 class="mt-3">Оксана Польская</h4>
-            <p>Маркетолог</p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <img src="images/team/team-3.jpg" alt="" class="img-fluid rounded w-100" />
-
-            <ul class="list-unstyled list-inline team-social mt-4">
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-pinterest"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-              </li>
-            </ul>
-            <h4 class="mt-3">Валерий Ханов</h4>
-            <p>Разработчик</p>
-          </div>
-          <div class="col-lg-3 col-md-6">
-            <img src="images/team/team-4.jpg" alt="" class="img-fluid rounded w-100" />
-
-            <ul class="list-unstyled list-inline team-social mt-4">
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-twitter"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-pinterest"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#"><i class="fab fa-google-plus"></i></a>
-              </li>
-            </ul>
-            <h4 class="mt-3">Михаил Джоранов</h4>
-            <p>Бизнес ассистент</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--  SECTION TEAM END  -->
-    <!--  PARTNER START  -->
-    <section class="section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 text-center text-lg-left">
-            <div class="mb-5">
-              <h3 class="mb-2">Эти компании доверяют нам</h3>
-              <p>Компании, с которыми мы работаем давно</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-3 col-sm-6 col-md-3 text-center">
-            <img src="images/clients/client01.png" alt="partner" class="img-fluid" />
-          </div>
-          <div class="col-lg-3 col-sm-6 col-md-3 text-center">
-            <img src="images/clients/client06.png" alt="partner" class="img-fluid" />
-          </div>
-          <div class="col-lg-3 col-sm-6 col-md-3 text-center">
-            <img src="images/clients/client04.png" alt="partner" class="img-fluid" />
-          </div>
-          <div class="col-lg-3 col-sm-6 col-md-3 text-center">
-            <img src="images/clients/client05.png" alt="partner" class="img-fluid" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--  PARTNER END  -->
+  
 
 
 
